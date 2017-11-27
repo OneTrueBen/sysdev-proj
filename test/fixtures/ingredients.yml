@@ -2,6 +2,10 @@
 
 one:
   name: MyString
+  quantity: 1
+  supplier: one
 
 two:
   name: MyString
+  quantity: 1
+  supplier: two
