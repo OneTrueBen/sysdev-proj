@@ -9,6 +9,14 @@
   </head>
 
   <body>
+  	<header>
+  		<h1>RedTeam!</h1>
+  		<nav>
+  			<%= link_to 'Ingredients', ingredients_path %>
+  			<%= link_to 'Suppliers', suppliers_path %>
+  			<%= link_to 'Orders', orders_path %>
+  		</nav>
+  	</header>
     <%= yield %>
   </body>
 </html>
