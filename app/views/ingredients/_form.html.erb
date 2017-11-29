@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :supplier_id %>
-    <%= f.text_field :supplier_id %>
+    <%= f.collection_select :supplier_id, Supplier.all, :id, :name, prompt: true %>
   </div>
 
   <div class="actions">
