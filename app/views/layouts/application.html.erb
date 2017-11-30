@@ -10,12 +10,15 @@
 
   <body>
   	<header>
-  		<h1>RedTeam!</h1>
-  		<nav>
+      <nav class = "redTeamLinks">
+  		<h1><center>RedTeam!</center></h1>
+  		<nav><center>
   			<%= link_to 'Ingredients', ingredients_path %>
   			<%= link_to 'Suppliers', suppliers_path %>
   			<%= link_to 'Orders', orders_path %>
+      </center>
   		</nav>
+    </nav>
   	</header>
     <%= yield %>
   </body>
