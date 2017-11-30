@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  customer: MyString
-  date: 2017-11-22 10:33:35
+  date: 2017-11-30
+  details: MyText
+  total: 9.99
 
 two:
-  customer: MyString
-  date: 2017-11-22 10:33:35
+  date: 2017-11-30
+  details: MyText
+  total: 9.99
