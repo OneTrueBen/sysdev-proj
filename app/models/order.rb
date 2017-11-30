@@ -1,4 +1,3 @@
 class Order < ApplicationRecord
-	belongs_to :customer
-	validates_presence_of :customer, :date
+	validates_presence_of :date, :details, :total
 end
