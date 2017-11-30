@@ -4,7 +4,7 @@ class IngredientsController < ApplicationController
   # GET /ingredients
   # GET /ingredients.json
   def index
-    @ingredients = Ingredient.all
+    @ingredients = Ingredient.search(params[:term])
   end
 
   # GET /ingredients/1
@@ -69,6 +69,6 @@ class IngredientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ingredient_params
-      params.require(:ingredient).permit(:name, :quantity, :supplier_id)
+      params.require(:ingredient).permit(:name, :quantity, :supplier_id, :term)
     end
 end

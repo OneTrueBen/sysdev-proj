@@ -2,6 +2,12 @@
 
 <h1>Ingredients</h1>
 
+<%= form_tag(ingredients_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] %>
+  <%= submit_tag 'Search', name: nil %>
+<% end %>
+
+
 <table>
   <thead>
     <tr>
@@ -17,7 +23,7 @@
       <tr>
         <td><%= ingredient.name %></td>
         <td><%= ingredient.quantity %></td>
-        <td><%= ingredient.supplier %></td>
+        <td><%= ingredient.supplier.name %></td>
         <td><%= link_to 'Show', ingredient %></td>
         <td><%= link_to 'Edit', edit_ingredient_path(ingredient) %></td>
         <td><%= link_to 'Destroy', ingredient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
